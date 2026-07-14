@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample JavaScript</title>
+
+    <script>
+       function myFunction() {
+        // Fixed typo: getElementaryById -> getElementById
+        document.getElementById("demo").innerHTML = "Hi, qt q";
+       }
+
+       function myName() {
+        // Fixed typo: getElementaryById -> getElementById
+        document.getElementById("name").innerHTML = "Julianne Angela (Badat)";
+       }
+
+    // How to Declare Variables:
+    let firstnumber = 15;
+    let secondnumber = 6;
+    let sum = firstnumber + secondnumber;
+    // Added the missing difference variable:
+    let difference = firstnumber - secondnumber; 
+    let product = firstnumber * secondnumber; 
+    let quotient = firstnumber / secondnumber; 
+    
+    function mySum() {
+        document.getElementById("add").innerHTML = "The sum is " + sum;
+    }
+    
+    function myDifference() {
+        // Fixed ID to match the HTML ("subtraction")
+        document.getElementById("subtraction").innerHTML = "The difference is " + difference;
+    }
+
+    function myProduct() {
+        document.getElementById("multiply").innerHTML = "The product is " + product;
+    }
+
+    function myquotient() {
+        document.getElementById("divide").innerHTML = "The qoutient is " + quotient;
+    }
+    </script>
+</head>
+<body>
+    <h1>SAMPLE JAVASCRIPT</h1>
+    <p id="demo">Text will show here</p>
+    <button type="button" onclick="myFunction()">Click Me!</button>
+
+    <p id="name">Name will show here</p>
+    <button type="button" onclick="myName()">Show Me!</button>
+
+    <p id="add">SUM will show here</p>
+    <button type="button" onclick="mySum()">Calculator</button>
+
+    <p id="subtraction">DIFFERENCE will show here</p>
+    <!-- Fixed function name casing to match JavaScript -->
+    <button type="button" onclick="myDifference()">Calculator</button>
+
+    <p id="multiply">PRODUCT will show here</p>
+    <button type="button" onclick="myProduct()">Calculator</button>
+
+    <p id="divide">QUOTIENT will show here</p>
+    <button type="button" onclick="myquotient()">Calculator</button>
+</body>
+</html>
